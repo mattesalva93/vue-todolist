@@ -1,0 +1,25 @@
+*{
+    font-family: 'Dancing Script', sans-serif;
+}
+
+.ms_style{
+    background-color: #F4E0B3;
+}
+
+ul {
+    height: 100vh;
+}
+ul > li {
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px black solid;
+    font-size: 2rem;
+    cursor: pointer;
+    list-style-type: none;
+    margin: 0 10px;
+}
+ul > li > i {
+    color: red;
+    font-size: 1.5rem;
+    margin: 19px 10px;
+}

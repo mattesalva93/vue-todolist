@@ -20,6 +20,7 @@ let app = new Vue ({
         ]
 
     },
+    
     methods: {
 
         aggiungiMansione : function(inputUtente){
