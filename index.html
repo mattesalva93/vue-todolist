@@ -14,7 +14,23 @@
 
     <main>
         <div id="miapp">
-
+            <div class="container">
+                <div class="row">
+                    <div class="col text center">
+                        <input v-model="inputUtente" type="text">
+                        <button @click="aggiungiMansione(inputUtente); inputUtente = ''">Add</button>
+                        <ul v-for="elemento in listatodo">
+                            <li v-if="elemento.done == false">
+                                {{ elemento.text }}
+                                <i class="fas fa-times"></i>
+                            <li v-else=>
+                                <strike>{{ elemento.text }}</strike>
+                                <i class="fas fa-times"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>  
  
