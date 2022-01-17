@@ -3,6 +3,7 @@ let app = new Vue ({
     data: {
         inputUtente: "",
         listatodo : [
+
             {
                text: "Spesa",
                done: false, 
@@ -15,8 +16,6 @@ let app = new Vue ({
                 text: "Lezione",
                 done: true, 
             },
-
-            
 
         ]
 

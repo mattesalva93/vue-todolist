@@ -23,7 +23,7 @@
                             <li v-if="elemento.done == false">
                                 {{ elemento.text }}
                                 <i @click="rimuoviMansione( indice )" class="fas fa-times"></i>
-                            <li v-else=>
+                                <li v-else=>
                                 <strike>{{ elemento.text }}</strike>
                                 <i @click="rimuoviMansione( indice )" class="fas fa-times"></i>
                             </li>
