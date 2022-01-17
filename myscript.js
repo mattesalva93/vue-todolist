@@ -25,11 +25,13 @@ let app = new Vue ({
 
         aggiungiMansione : function(inputUtente){
 
+            if(inputUtente != ''){
             nuovoOggetto = {
                 text: inputUtente,
                 done: false,            
             };
             this.listatodo.push(nuovoOggetto);
+            }
         },
 
         rimuoviMansione : function(index){
