@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col text center">
-                        <input v-model="inputUtente" type="text">
+                        <input v-model="inputUtente" type="text" @keyup.enter="aggiungiMansione(inputUtente); inputUtente = ''">
                         <button @click="aggiungiMansione(inputUtente); inputUtente = ''">Add</button>
                         <ul v-for="(elemento, indice) in listatodo">
                             <li v-if="elemento.done == false">
