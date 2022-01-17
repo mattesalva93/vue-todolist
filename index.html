@@ -19,13 +19,13 @@
                     <div class="col text center">
                         <input v-model="inputUtente" type="text">
                         <button @click="aggiungiMansione(inputUtente); inputUtente = ''">Add</button>
-                        <ul v-for="elemento in listatodo">
+                        <ul v-for="(elemento, indice) in listatodo">
                             <li v-if="elemento.done == false">
                                 {{ elemento.text }}
-                                <i class="fas fa-times"></i>
+                                <i @click="rimuoviMansione( indice )" class="fas fa-times"></i>
                             <li v-else=>
                                 <strike>{{ elemento.text }}</strike>
-                                <i class="fas fa-times"></i>
+                                <i @click="rimuoviMansione( indice )" class="fas fa-times"></i>
                             </li>
                         </ul>
                     </div>
