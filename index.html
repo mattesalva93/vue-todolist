@@ -20,10 +20,10 @@
                         <input v-model="inputUtente" type="text" @keyup.enter="aggiungiMansione(inputUtente); inputUtente = ''">
                         <button @click="aggiungiMansione(inputUtente); inputUtente = ''">Add</button>
                         <ul v-for="(elemento, indice) in listatodo">
-                            <li v-if="elemento.done == false">
+                            <li v-if="elemento.done == false" @click="elemento.done = true">
                                 {{ elemento.text }}
                                 <i @click="rimuoviMansione( indice )" class="fas fa-times"></i>
-                                <li v-else=>
+                                <li v-else @click="elemento.done = false">
                                 <strike>{{ elemento.text }}</strike>
                                 <i @click="rimuoviMansione( indice )" class="fas fa-times"></i>
                             </li>

@@ -30,8 +30,10 @@ let app = new Vue ({
             };
             this.listatodo.push(nuovoOggetto);
         },
+
         rimuoviMansione : function(index){
             this.listatodo.splice(index,1);
-        }
+        },
+
     }
 });
